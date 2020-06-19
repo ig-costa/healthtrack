@@ -1,0 +1,50 @@
+.form {
+  width: 70%;
+  margin-top: 5.5rem;
+}
+
+.form-group {
+  /* override bootstrap rules */
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  color: var(--gray);
+  transform: translateY(0);
+  transition: transform 0.5s ease;
+}
+
+.form-control {
+  /* override bootstrap rules */
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px dashed var(--gray);
+  background-color: transparent;
+}
+
+.form-control:focus ~ .form-label {
+  transform: translateY(-2rem);
+}
+
+.btn {
+  /* override bootstrap rules */
+  background-color: var(--primary);
+  border: none;
+  border-radius: 3rem;
+  font-family: "Khula";
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 1.9rem;
+  padding: 0.8rem 0;
+  transition: opacity 0.5s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary);
+  opacity: 0.8;
+}
